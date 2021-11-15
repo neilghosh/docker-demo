@@ -1,0 +1,9 @@
+version: '3.9'
+services:
+  app:
+    container_name: myapp
+    build: .
+    ##command: ffmpeg -version
+    tty: true  ## Keeps it running forever https://devopscube.com/keep-docker-container-running/
+    volumes:
+    - .:/usr/app/
